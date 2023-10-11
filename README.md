@@ -3,8 +3,8 @@
 </h1>
 
 <div align="center">
-  <img src="https://img.shields.io/badge/Author-[Your Name]-blue">
-  <img src="https://img.shields.io/badge/License-[License Name]-brightgreen">
+  <img src="https://img.shields.io/badge/Author-[Shubham Sharma]-blue">
+  <img src="https://img.shields.io/badge/License-[MIT]-brightgreen">
 </div>
 
 ![Portfolio Website](./assets/images/portfolio-gif.gif)
