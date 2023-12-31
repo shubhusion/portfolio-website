@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You!</title>
+    <style>
+        /* Custom properties for colors and fonts */
+        :root {
+            --orange-yellow-crayola: #FFA500;
+            --smoky-black: #121212;
+            --ff-poppins: 'Poppins', sans-serif;
+            --light-yellow-green: #c2e0a9; /* Light yellow-green color */
+            --light-gray: #eee;
+            --lighter-orange: #ffcc80; /* Lighter shade of orange */
+        }
+
+        /* Custom styles for the thank you page */
+        body {
+            font-family: var(--ff-poppins);
+            background: var(--smoky-black);
+            color: var(--light-gray); /* Text color set to light gray */
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .thank-you {
+            text-align: center;
+            padding: 50px;
+            background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 80%;
+            border: 2px solid var(--lighter-orange); /* Lighter color border */
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .thank-you h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            color: var(--orange-yellow-crayola); /* Orange-yellow color for the heading */
+        }
+
+        .thank-you p {
+            font-size: 1.6rem;
+            line-height: 1.8;
+            margin-bottom: 40px;
+        }
+
+        .thank-you a {
+            color: var(--orange-yellow-crayola); /* Orange-yellow color for links */
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .thank-you a:hover {
+            color: var(--light-yellow-green); /* Light yellow-green co
+        ror for links on hover */
+        }
