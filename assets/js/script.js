@@ -130,14 +130,3 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
-function sendEmail()
-{
-  var params = {
-    name: document.getElementById("fullName").value,
-    email: document.getElementById("email_id").value,
-    message: document.getElementById("message").value
-  }
-  emailjs.send("service_s7f7j8d","template_cmmrdgp", params).then(function (res) {
-    alert("Success! Your email has been sent.", res.status, res.text);
-  })
-}

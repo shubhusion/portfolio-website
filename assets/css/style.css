@@ -209,6 +209,28 @@ article {
 
 article {
   display: none;
+  max-height: 400px; /* Set a maximum height for the content */
+  overflow-y: auto; /* Enable vertical scrollbar */
+}
+
+
+article::-webkit-scrollbar {
+  width: 5px;
+  /* for vertical scrollbar */
+  height: 5px;
+  /* for horizontal scrollbar */
+}
+
+/* Track (background) of the scrollbar */
+article::-webkit-scrollbar-track {
+  background: var(--onyx);
+  border-radius: 5px;
+}
+
+/* Handle (thumb) of the scrollbar */
+article::-webkit-scrollbar-thumb {
+  background: var(--orange-yellow-crayola);
+  border-radius: 5px;
 }
 
 article.active {
