@@ -209,7 +209,7 @@ article {
 
 article {
   display: none;
-  max-height: 400px; /* Set a maximum height for the content */
+  max-height: 700px; /* Set a maximum height for the content */
   overflow-y: auto; /* Enable vertical scrollbar */
 }
 
@@ -1683,7 +1683,6 @@ textarea.form-input::-webkit-resizer {
   /**
    * REUSED STYLE
    */
-
   .sidebar,
   article {
     width: 700px;
