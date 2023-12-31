@@ -108,28 +108,6 @@ for (let i = 0; i < filterBtn.length; i++) {
 }
 
 
-
-// contact form variables
-const form = document.querySelector("[data-form]");
-const formInputs = document.querySelectorAll("[data-form-input]");
-const formBtn = document.querySelector("[data-form-btn]");
-
-// add event to all form input field
-for (let i = 0; i < formInputs.length; i++) {
-  formInputs[i].addEventListener("input", function () {
-
-    // check form validation
-    if (form.checkValidity()) {
-      formBtn.removeAttribute("disabled");
-    } else {
-      formBtn.setAttribute("disabled", "");
-    }
-
-  });
-}
-
-
-
 // page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
@@ -150,4 +128,16 @@ for (let i = 0; i < navigationLinks.length; i++) {
     }
 
   });
+}
+
+function sendEmail()
+{
+  var params = {
+    name: document.getElementById("fullName").value,
+    email: document.getElementById("email_id").value,
+    message: document.getElementById("message").value
+  }
+  emailjs.send("service_s7f7j8d","template_cmmrdgp", params).then(function (res) {
+    alert("Success! Your email has been sent.", res.status, res.text);
+  })
 }
