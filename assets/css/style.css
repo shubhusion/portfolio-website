@@ -900,6 +900,12 @@ main {
   line-height: 1.6;
 }
 
+.timeline-item img {
+  max-width: fit-content;
+  height: 100px;
+  cursor: pointer;
+}
+
 /**
  * skills 
  */
