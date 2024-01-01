@@ -105,6 +105,7 @@ body.lb-disable-scrolling {
   left: 0;
   float: left;
   background: url(../images/prev.png) left 48% no-repeat;
+  background-size: 70px 70px; /* Adjust to your desired size */
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   -webkit-transition: opacity 0.6s;
@@ -123,6 +124,7 @@ body.lb-disable-scrolling {
   right: 0;
   float: right;
   background: url(../images/next.png) right 48% no-repeat;
+  background-size: 70px 70px; /* Adjust to your desired size */
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   -webkit-transition: opacity 0.6s;
@@ -130,6 +132,7 @@ body.lb-disable-scrolling {
   -o-transition: opacity 0.6s;
   transition: opacity 0.6s;
 }
+
 
 .lb-nav a.lb-next:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
@@ -184,9 +187,10 @@ body.lb-disable-scrolling {
 .lb-data .lb-close {
   display: block;
   float: right;
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   background: url(../images/close.png) top right no-repeat;
+  background-size: 40px 40px; /* Adjust to your desired size */
   text-align: right;
   outline: none;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
